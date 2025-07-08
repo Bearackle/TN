@@ -2,6 +2,9 @@
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import html2canvas from "html2canvas";
+import React from "react";
+import type { ReactElement } from "react";
+
 export default function submission() {
   const [answers, setAnswers] = useState<(number | null)[]>(
     Array(200).fill(null)
@@ -35,7 +38,7 @@ export default function submission() {
     setIsChecking(false);
   }, []);
   const renderAnswers = () => {
-    const result: JSX.Element[] = [];
+    const result: ReactElement[] = [];
     for (let i = 0; i < 200; i++) {
       const ans = answers[i];
       let ansChar = "";
