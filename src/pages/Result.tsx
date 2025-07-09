@@ -1,5 +1,3 @@
-// === Result.tsx: Hiển thị đáp án + kiểm tra OCR ảnh + chấm điểm + lọc sai ===
-
 import React, { useRef, useState } from 'react';
 import { listingQuestions } from '../data/questionsListing';
 import { readingQuestions } from '../data/questionsReading';
